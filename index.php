@@ -95,7 +95,7 @@
                 <?php while ($row = $result->fetch(PDO::FETCH_ASSOC)) : ?>
                     <tr>
                         <!-- <th scope="row"><?php echo $row['id']; ?></th> -->
-                        <td><?php echo $row['titolo']; ?></td>
+                        <td><a href="book_detail.php?id=<?php echo $row['id']; ?>"><?php echo $row['titolo']; ?></a></td>
                         <td><?php echo $row['autore']; ?></td>
                         <td><?php echo $row['anno_pubblicazione']; ?></td>
                         <td><?php echo $row['genere']; ?></td>
