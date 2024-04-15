@@ -62,7 +62,7 @@
             if ($stmt->rowCount() > 0) {
                 $book = $stmt->fetch(PDO::FETCH_ASSOC);
                 // Visualizza i dettagli del libro
-                echo "<h1><i>Pagina di dettaglio</i></h1>";
+                echo "<h1 class='mb-3'><i>Pagina di dettaglio</i></h1>";
                 echo "<p>Titolo: " . $book['titolo'] . "</p>";
                 echo "<p>Autore: " . $book['autore'] . "</p>";
                 echo "<p>Anno di pubblicazione: " . $book['anno_pubblicazione'] . "</p>";
